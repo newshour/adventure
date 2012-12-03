@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lunch time!</title>
+        <script type="text/javascript" src="../dist/adventure.min.js"></script>
+        <script type="text/javascript">
+            Adv.load('adventure', {
+                decisions: {
+                    'd0': [
+                        "What kind of food do you want?",
+                        ['c0', 'c1']
+                    ],
+                    'd1': [
+                        "What kind of beef should go on your sandwich?",
+                        ['c2', 'c3']
+                    ],
+                    'd2': [
+                        "Do you like tomato in your soup?",
+                        ['c4', 'c5']
+                    ]
+                },
+                endGames: {
+                    'e0': "You get a French dip!",
+                    'e1': "You get a Reuben!",
+                    'e2': "You get tomato soup!",
+                    'e3': "You get minestrone!"
+                },
+                choices: {
+                    'c0': ["Sandwich", 'd1'],
+                    'c1': ["Soup", 'd2'],
+                    'c2': ["Roast beef", 'e0'],
+                    'c3': ["Corned beef", 'e1'],
+                    'c4': ["Yes", 'e2'],
+                    'c5': ["No", 'e3']
+                },
+                start: 'd0'
+            });
+        </script>
+        <link rel="stylesheet" type="text/css" href="../dist/adventure.css" />
+    </head>
+    <body>
+        <div id="adventure"></div>
+    </body>
+</html>

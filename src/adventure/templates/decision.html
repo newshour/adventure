@@ -1,0 +1,7 @@
+<p class="adventure-wording"><%= obj.wording %></p>
+<ul class="adventure-choices">
+<% for (var i = 0, len = obj.choices.length; i < len; i++) { %>
+    <% var choice = obj.choices[i]; %>
+    <% print(choice.render()); %>
+<% } %>
+</ul>

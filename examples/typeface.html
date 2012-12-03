@@ -1,0 +1,804 @@
+<!doctype html>
+<html>
+    <head>
+        <title>So you need a typeface</title>
+        <script type="text/javascript" src="../dist/adventure.min.js"></script>
+        <script type="text/javascript">
+            Adv.load('adventure', {
+                decisions: {
+                    'd0': [
+                        "So you need a typeface<br /><br />Start out by choosing the kind of project that you'll need your typeface for.",
+                        ['c0', 'c1', 'c2', 'c3', 'c4']
+                    ],
+                    'd1': [
+                        "Are you completely in doubt?",
+                        ['c5', 'c6']
+                    ],
+                    'd2': [
+                        "A champion in usability, perhaps?",
+                        ['c7', 'c8']
+                    ],
+                    'd3': [
+                        "Everybody loves Garamond",
+                        ['c9', 'c10']
+                    ],
+                    'd4': [
+                        "But perhaps one would want a larger eye?",
+                        ['c11', 'c12']
+                    ],
+                    'd5': [
+                        "So you want a sans serif, is that the case?",
+                        ['c13', 'c14']
+                    ],
+                    'd6': [
+                        "What is your opinion of Eric Gill",
+                        ['c15', 'c16']
+                    ],
+                    'd7': [
+                        "Humanistic forms please your eye?",
+                        ['c17', 'c18']
+                    ],
+                    'd8': [
+                        "Okay to a question of food",
+                        ['c19', 'c20']
+                    ],
+                    'd9': [
+                        "We all like something very condensed, yes?",
+                        ['c21', 'c22']
+                    ],
+                    'd10': [
+                        "Got a lot of tables, have you?",
+                        ['c23', 'c24']
+                    ],
+                    'd11': [
+                        "You cried when watching Terminator",
+                        ['c25', 'c26']
+                    ],
+                    'd12': [
+                        "I must say that this flowchart is looking hot",
+                        ['c27']
+                    ],
+                    'd13': [
+                        "",
+                        ['c28', 'c29', 'c30']
+                    ],
+                    'd14': [
+                        "Do people call you boring from time to time?",
+                        ['c31', 'c32']
+                    ],
+                    'd15': [
+                        "How about something heavily used?",
+                        ['c33', 'c34']
+                    ],
+                    'd16': [
+                        "How does relighting the American tradition sound?",
+                        ['c35', 'c36']
+                    ],
+                    'd17': [
+                        "Think Mr. Spiekermann is mostly right?",
+                        ['c37', 'c38']
+                    ],
+                    'd18': [
+                        "The Netherlands is nice, right?",
+                        ['c39', 'c40']
+                    ],
+                    'd19': [
+                        "Mmm. Spiky serifs are nice",
+                        ['c41']
+                    ],
+                    'd20': [
+                        "Do you like it traditional?",
+                        ['c42', 'c43']
+                    ],
+                    'd21': [
+                        "Do you like the type on highways?",
+                        ['c44', 'c45']
+                    ],
+                    'd22': [
+                        "Okay, to a question of age",
+                        ['c46', 'c47']
+                    ],
+                    'd23': [
+                        "It's okay with you if it's Swiss?",
+                        ['c48']
+                    ],
+                    'd24': [
+                        "Something modern, yet plainspoken",
+                        ['c49', 'c50']
+                    ],
+                    'd25': [
+                        "Not afraid to be asked if you live in the nineties?",
+                        ['c51', 'c52']
+                    ],
+                    'd26': [
+                        "",
+                        ['c53', 'c54']
+                    ],
+                    'd27': [
+                        "You like geometrics?",
+                        ['c55', 'c56']
+                    ],
+                    'd28': [
+                        "Do you like Futura?",
+                        ['c57', 'c58']
+                    ],
+                    'd29': [
+                        "A neo-Grotesk perhaps?",
+                        ['c59', 'c60']
+                    ],
+                    'd30': [
+                        "If I say \"Science fiction movies are my favourite\"",
+                        ['c61', 'c62']
+                    ],
+                    'd31': [
+                        "Something humanistic, then?",
+                        ['c63', 'c64']
+                    ],
+                    'd32': [
+                        "Do you like the look of Adobe?",
+                        ['c65', 'c66']
+                    ],
+                    'd33': [
+                        "How about something classic?",
+                        ['c67', 'c68']
+                    ],
+                    'd34': [
+                        "Then we only have something decorative",
+                        ['c69']
+                    ],
+                    'd35': [
+                        "How does the words semi-sans, semi-serif sound?",
+                        ['c70', 'c71']
+                    ],
+                    'd36': [
+                        "Something new, got serifs, got sans?",
+                        ['c72', 'c73']
+                    ],
+                    'd37': [
+                        "Is it an Italian restaurant?",
+                        ['c74', 'c75']
+                    ],
+                    'd38': [
+                        "Got a whole bunch of office correspondence",
+                        ['c76', 'c77']
+                    ],
+                    'd39': [
+                        "Here we have a classic waiting for you",
+                        ['c78']
+                    ],
+                    'd40': [
+                        "Like something handwritten, do you?",
+                        ['c79', 'c80']
+                    ],
+                    'd41': [
+                        "Something calligraphic, maybe?",
+                        ['c81', 'c82']
+                    ],
+                    'd42': [
+                        "How about something a bit fancy?",
+                        ['c83', 'c84']
+                    ],
+                    'd43': [
+                        "",
+                        ['c85', 'c86']
+                    ],
+                    'd44': [
+                        "Readability?",
+                        ['c87', 'c88']
+                    ],
+                    'd45': [
+                        "Something fun, then?<br /><br />Are you alone?",
+                        ['c89']
+                    ],
+                    'd46': [
+                        "Okay then, come with me",
+                        ['c90']
+                    ]
+                },
+                endGames: {
+                    'e0': "Caslon",
+                    'e1': "Minion",
+                    'e2': "Sabon",
+                    'e3': "Garamond",
+                    'e4': "Optima",
+                    'e5': "Joanna",
+                    'e6': "Baskerville",
+                    'e7': "FF Scala",
+                    'e8': "Syntax",
+                    'e9': "Univers",
+                    'e10': "Letter Gothic",
+                    'e11': "OCR",
+                    'e12': "FF DIN",
+                    'e13': "Times",
+                    'e14': "Miller",
+                    'e15': "Proforma",
+                    'e16': "Arnhem",
+                    'e17': "Get out of my flowchart!",
+                    'e18': "Swift",
+                    'e19': "Interstate",
+                    'e20': "Franklin Gothic",
+                    'e21': "Helvetica",
+                    'e22': "Gotham",
+                    'e23': "FF Meta",
+                    'e24': "Futura",
+                    'e25': "Metro",
+                    'e26': "Eurostile",
+                    'e27': "Myriad",
+                    'e28': "Frutiger",
+                    'e29': "Akzidenz Grotesk",
+                    'e30': "Peignot",
+                    'e31': "Rotis",
+                    'e32': "Fedra",
+                    'e33': "Bodoni",
+                    'e34': "Lexicon",
+                    'e35': "Palatino",
+                    'e36': "Zapfino",
+                    'e37': "FF Erikrighthand",
+                    'e38': "Walbaum",
+                    'e39': "Didot",
+                    'e40': "Comic Sans",
+                },
+                choices: {
+                    'c0': ["Book", 'd1'],
+                    'c1': ["Infographic", 'd9'],
+                    'c2': ["Newspaper", 'd13'],
+                    'c3': ["Logo", 'd26'],
+                    'c4': ["Invitation", 'd40'],
+                    'c5': ["Yes", 'e0'],
+                    'c6': ["No", 'd2'],
+                    'c7': ["Yes", 'e1'],
+                    'c8': ["No", 'd3'],
+                    'c9': ["Yes", 'd4'],
+                    'c10': ["No", 'd5'],
+                    'c11': ["Yes", 'e2'],
+                    'c12': ["No", 'e3'],
+                    'c13': ["Yes", 'e4'],
+                    'c14': ["No", 'd6'],
+                    'c15': ["Good", 'e5'],
+                    'c16': ["Bad", 'd7'],
+                    'c17': ["Yes", 'd8'],
+                    'c18': ["No", 'e6'],
+                    'c19': ["Gouda", 'e7'],
+                    'c20': ["Emmental", 'e8'],
+                    'c21': ["Yes", 'e9'],
+                    'c22': ["No", 'd10'],
+                    'c23': ["Yes", 'e10'],
+                    'c24': ["No", 'd11'],
+                    'c25': ["Yes", 'e11'],
+                    'c26': ["No", 'd12'],
+                    'c27': ["Yes", 'e12'],
+                    'c28': ["Text face", 'd14'],
+                    'c29': ["Display", 'd20'],
+                    'c30': ["Combination", 'd17'],
+                    'c31': ["Yes", 'e13'],
+                    'c32': ["No", 'd15'],
+                    'c33': ["Yes", 'e14'],
+                    'c34': ["No", 'd16'],
+                    'c35': ["Good", 'e15'],
+                    'c36': ["Bad", 'e16'],
+                    'c37': ["Yes", 'e16'],
+                    'c38': ["No", 'd18'],
+                    'c39': ["Yes", 'd19'],
+                    'c40': ["No", 'e17'],
+                    'c41': ["OK", 'e18'],
+                    'c42': ["Yes", 'd21'],
+                    'c43': ["No", 'd24'],
+                    'c44': ["Yes", 'd22'],
+                    'c45': ["No", 'd23'],
+                    'c46': ["New", 'e19'],
+                    'c47': ["Old", 'e20'],
+                    'c48': ["Yes", 'e21'],
+                    'c49': ["Yes", 'e22'],
+                    'c50': ["No", 'd24'],
+                    'c51': ["Yes", 'e21'],
+                    'c52': ["No", 'e23'],
+                    'c53': ["A sans serif, maybe?", 'd27'],
+                    'c54': ["Or perhaps a serif?", 'd35'],
+                    'c55': ["Yes", 'd28'],
+                    'c56': ["No", 'd29'],
+                    'c57': ["Yes", 'e24'],
+                    'c58': ["No", 'e25'],
+                    'c59': ["Yes", 'd30'],
+                    'c60': ["No", 'd31'],
+                    'c61': ["Good", 'e26'],
+                    'c62': ["Bad", 'e21'],
+                    'c63': ["Yes", 'd32'],
+                    'c64': ["No", 'd33'],
+                    'c65': ["Yes", 'e27'],
+                    'c66': ["No", 'e28'],
+                    'c67': ["Yes", 'e29'],
+                    'c68': ["No", 'd34'],
+                    'c69': ["OK", 'e30'],
+                    'c70': ["Good", 'e31'],
+                    'c71': ["Bad", 'd36'],
+                    'c72': ["Good", 'e32'],
+                    'c73': ["Bad", 'd37'],
+                    'c74': ["Yes", 'e33'],
+                    'c75': ["No", 'd38'],
+                    'c76': ["Yes", 'e34'],
+                    'c77': ["No", 'd39'],
+                    'c78': ["OK", 'e35'],
+                    'c79': ["Yes", 'd41'],
+                    'c80': ["No", 'd42'],
+                    'c81': ["Yes", 'e36'],
+                    'c82': ["No", 'e37'],
+                    'c83': ["Yes", 'd43'],
+                    'c84': ["No", 'd45'],
+                    'c85': ["Thin hairlines", 'e33'],
+                    'c86': ["Thinner hairlines", 'd44'],
+                    'c87': ["Yes", 'e38'],
+                    'c88': ["No", 'e39'],
+                    'c89': ["Yes", 'd46'],
+                    'c90': ["...", 'e40'],
+                },
+                start: 'd0'
+            });
+        </script>
+        <link rel="stylesheet" type="text/css" href="../dist/adventure.css" />
+        <style type="text/css">
+            /* Image replacement, HTML5 Boilerplate style */
+            .adventure-wording/*,
+            .adventure-choice-link*/ {
+                background-color: transparent;
+                background-image: url(infographiclarge_v2.png);
+                color: #000;
+                border: 0;
+                overflow: hidden;
+                *text-indent: -9999px;
+            }
+            .adventure-wording:before/*,
+            .adventure-choice-link:before*/ {
+                content: "";
+                display: block;
+                width: 0;
+                height: 100%;
+            }
+            
+            .adventure-d0 .adventure-wording {
+                background-position: -588px -448px;
+                width: 695px;
+                height: 309px;
+            }
+            .adventure-d1 .adventure-wording {
+                background-position: -457px -345px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d2 .adventure-wording {
+                background-position: -354px -475px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d3 .adventure-wording {
+                background-position: -237px -574px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d4 .adventure-wording {
+                background-position: -237px -728px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d5 .adventure-wording {
+                background-position: -79px -662px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d6 .adventure-wording {
+                background-position: -80px -487px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d7 .adventure-wording {
+                background-position: -110px -259px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d8 .adventure-wording {
+                background-position: -280px -163px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d9 .adventure-wording {
+                background-position: -658px -163px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d10 .adventure-wording {
+                background-position: -825px -83px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d11 .adventure-wording {
+                background-position: -988px -155px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d12 .adventure-wording {
+                background-position: -1142px -256px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d13 .adventure-wording {
+                background-position: -1160px -335px;
+                width: 193px;
+                height: 69px;
+            }
+            .adventure-d14 .adventure-wording {
+                background-position: -1399px -199px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d15 .adventure-wording {
+                background-position: -1487px -50px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d16 .adventure-wording {
+                background-position: -1589px -191px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d17 .adventure-wording {
+                background-position: -1547px -393px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d18 .adventure-wording {
+                background-position: -1608px -534px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d19 .adventure-wording {
+                background-position: -1793px -638px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d20 .adventure-wording {
+                background-position: -1404px -453px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d21 .adventure-wording {
+                background-position: -1338px -602px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d22 .adventure-wording {
+                background-position: -1280px -774px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d23 .adventure-wording {
+                background-position: -1418px -758px;
+                width: 193px;
+                height: 46px;
+            }
+            .adventure-d24 .adventure-wording {
+                background-position: -1484px -601px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d25 .adventure-wording {
+                background-position: -1581px -809px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d26 .adventure-wording {
+                background-position: -930px -868px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d27 .adventure-wording {
+                background-position: -902px -934px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d28 .adventure-wording {
+                background-position: -1120px -1044px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d29 .adventure-wording {
+                background-position: -1067px -934px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d30 .adventure-wording {
+                background-position: -1604px -1021px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d31 .adventure-wording {
+                background-position: -1259px -1073px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d32 .adventure-wording {
+                background-position: -1347px -1190px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d33 .adventure-wording {
+                background-position: -1406px -1103px;
+                width: 193px;
+                height: 60px;
+            }
+            .adventure-d34 .adventure-wording {
+                background-position: -1615px -1096px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d35 .adventure-wording {
+                background-position: -450px -830px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d36 .adventure-wording {
+                background-position: -372px -918px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d37 .adventure-wording {
+                background-position: -134px -961px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d38 .adventure-wording {
+                background-position: -145px -832px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d39 .adventure-wording {
+                background-position: -80px -742px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d40 .adventure-wording {
+                background-position: -649px -953px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d41 .adventure-wording {
+                background-position: -623px -1126px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d42 .adventure-wording {
+                background-position: -840px -1072px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-d43 .adventure-wording {
+                background-position: -853px -1157px;
+                width: 48px;
+                height: 48px;
+            }
+            .adventure-d44 .adventure-wording {
+                background-position: -554px -1273px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-d45 .adventure-wording {
+                background-position: -871px -1231px;
+                width: 274px;
+                height: 46px;
+            }
+            .adventure-d46 .adventure-wording {
+                background-position: -981px -1072px;
+                width: 131px;
+                height: 46px;
+            }
+            
+            .adventure-e0 .adventure-wording {
+                background-position: -843px -341px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e1 .adventure-wording {
+                background-position: -236px -366px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e2 .adventure-wording {
+                background-position: -379px -624px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e3 .adventure-wording {
+                background-position: -444px -752px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-e4 .adventure-wording {
+                background-position: -393px -550px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e5 .adventure-wording {
+                background-position: -18px -344px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e6 .adventure-wording {
+                background-position: -18px -191px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e7 .adventure-wording {
+                background-position: -263px -297px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e8 .adventure-wording {
+                background-position: -430px -151px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e9 .adventure-wording {
+                background-position: -1202px -37px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e10 .adventure-wording {
+                background-position: -842px -242px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e11 .adventure-wording {
+                background-position: -990px -294px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e12 .adventure-wording {
+                background-position: -1246px -176px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e13 .adventure-wording {
+                background-position: -1655px -37px;
+                width: 193px;
+                height: 69px;
+            }
+            .adventure-e14 .adventure-wording {
+                background-position: -1655px -111px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e15 .adventure-wording {
+                background-position: -1800px -165px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e16 .adventure-wording {
+                background-position: -1622px -640px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e17 .adventure-wording {
+                background-position: -1772px -587px;
+                width: 131px;
+                height: 46px;
+            }
+            .adventure-e18 .adventure-wording {
+                background-position: -1776px -755px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e19 .adventure-wording {
+                background-position: -1535px -956px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e20 .adventure-wording {
+                background-position: -1308px -1002px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e21 .adventure-wording {
+                background-position: -1397px -883px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e22 .adventure-wording {
+                background-position: -1621px -713px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e23 .adventure-wording {
+                background-position: -1732px -925px;
+                width: 193px;
+                height: 60px;
+            }
+            .adventure-e24 .adventure-wording {
+                background-position: -1155px -1240px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e25 .adventure-wording {
+                background-position: -1294px -1242px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e26 .adventure-wording {
+                background-position: -1745px -1295px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e27 .adventure-wording {
+                background-position: -1569px -1164px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e28 .adventure-wording {
+                background-position: -1569px -1229px;
+                width: 131px;
+                height: 60;
+            }
+            .adventure-e29 .adventure-wording {
+                background-position: -1433px -1296px;
+                width: 131px;
+                height: 60;
+            }
+            .adventure-e30 .adventure-wording {
+                background-position: -1569px -1296px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e31 .adventure-wording {
+                background-position: -223px -1063px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e32 .adventure-wording {
+                background-position: -151px -1281px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e33 .adventure-wording {
+                background-position: -550px -1200px;
+                width: 193px;
+                height: 60px;
+            }
+            .adventure-e34 .adventure-wording {
+                background-position: -151px -1210px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e35 .adventure-wording {
+                background-position: -151px -1142px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e36 .adventure-wording {
+                background-position: -367px -995px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e37 .adventure-wording {
+                background-position: -367px -1063px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e38 .adventure-wording {
+                background-position: -295px -1195px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e39 .adventure-wording {
+                background-position: -295px -1263px;
+                width: 131px;
+                height: 60px;
+            }
+            .adventure-e40 .adventure-wording {
+                background-position: -1731px -830px;
+                width: 131px;
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="adventure"></div>
+        <p>Source: <a href="http://www.behance.net/gallery/So-You-Need-A-Typeface/486723" target="_blank">Julian Hansen</a></p>
+    </body>
+</html>
